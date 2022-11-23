@@ -1,0 +1,29 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+@use 'sass:color';
+
+
+.btn-transparent {
+
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    font-size: 2rem;
+    letter-spacing: .2ex;
+    z-index: 1;
+    transition-duration: .5s;
+ 
+    @include medium {
+       
+        font-size: 8rem;
+    }
+
+    &:hover {
+     transform: scale(0.9) 
+    }
+
+
+
+}

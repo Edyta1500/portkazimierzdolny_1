@@ -1,0 +1,67 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.heading {
+    &--h1 {
+
+        color: $color1;
+        font-size: 4rem;
+       
+        
+        @include x-small{
+            font-size: 6rem;
+        }
+        
+        @include small{
+            font-size: 8rem;
+        }
+        
+        @include medium {
+            font-size: 14rem;
+        }
+
+        @include large{
+            font-size: 16rem;
+           
+        }
+        
+        
+        
+
+    }
+    &--hide{
+        color: $color2;
+        scale: 0.5;
+    }
+
+    
+
+    &--h2 {
+
+        font-size: 2rem;
+        width: 100%;
+        line-height: 3.5rem;
+        text-align: center;
+        @include small{
+            font-size: 3rem;
+            line-height: 4.5rem;
+        }
+        @include medium{
+            font-size: 5rem;
+            line-height: 6.5rem;
+        }
+        
+    }
+    &--h3 {
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+    
+       @include small{
+        font-size: 3rem;
+       }
+        @include medium {
+            font-size: 5rem;
+        }
+    }
+}

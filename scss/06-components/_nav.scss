@@ -1,0 +1,81 @@
+@use "../01-settings/" as *;
+@use "../02-tools/" as *;
+
+
+#menu{
+  position: fixed;
+  right: 0rem;
+  top: 0rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: $color-gradient3;
+  margin: 2rem;
+  z-index: 2;
+
+  @include medium{
+    font-size: 3rem;
+    
+  }
+  @include large{
+    font-size: 4.5rem;
+  }
+}
+
+nav {
+  
+  color: $color-white;
+}
+
+.nav__ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  transition-duration: 1s;
+ 
+  @include medium{
+    width: 30%;
+    
+  }
+}
+
+.nav__item {
+  flex-basis: 13%;
+  font-size: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.451);
+  &:nth-of-type(1) {
+    border-top: 1px solid rgba(255, 255, 255, 0.451);
+  }
+}
+
+.nav__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.451);
+    color: $color-gradient13;
+  }
+  font-size: 4rem;
+  @include medium{
+    font-size: 8rem;
+  }
+}
+
+nav a {
+  color: $color-white;
+  text-decoration: none;
+}

@@ -1,0 +1,56 @@
+@use '../01-settings/' as *;
+
+@mixin x-small{
+    @media screen and(min-width: $bp-xs) {
+        @content;
+        
+    }
+}
+
+
+@mixin small {
+
+    @media screen and(min-width: $bp-xs) {
+        @content;
+        
+    }
+    
+}
+
+
+@mixin medium {
+
+    @media screen and(min-width: $bp-md) {
+        @content;
+    }
+
+}
+
+@mixin large {
+
+    @media screen and(min-width: $bp-lg) {
+        @content;
+    }
+
+}
+
+@mixin x-large {
+
+    @media screen and(min-width: $bp-xl) {
+        @content;
+    }
+
+}
+
+@mixin color-gradient1{
+    
+    background-image: linear-gradient($color-gradient1 20%, $color-gradient2 60%, $color-gradient3 100%);
+} 
+@mixin color-gradient11{
+    
+    background-image: linear-gradient($color-gradient11 20%, $color-gradient12 80%, $color-gradient13 100%);
+} 
+@mixin color-gradient21{
+    
+    background-image: linear-gradient($color-gradient13 20%, $color-gradient12 80%, $color-gradient11 100%);
+}

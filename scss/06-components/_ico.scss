@@ -1,0 +1,33 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+
+.ico--img {
+    background: url('../assets/img/no-pets.png') center/cover;
+    justify-content: flex-start;
+}
+.ico--material-icon{
+    font-size: 5rem;
+
+    
+}
+.ico{
+   
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto ;
+   
+
+
+   &__designation{
+        font-size: 2rem;
+        
+        
+        
+   }      
+        
+        @mixin medium{
+            font-size: 6rem;
+        }
+      
+    }

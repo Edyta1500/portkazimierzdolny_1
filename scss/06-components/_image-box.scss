@@ -1,0 +1,39 @@
+@use '../02-tools/' as *;
+
+.image-box {
+
+    border-radius: .6rem;
+    box-shadow: 0px 0px 15px gray;
+    height: 30rem;
+
+    &:hover {
+        box-shadow: 0px 0px 25px gray;
+    }
+   
+    @include medium {
+        height: 50rem;
+    }
+
+    &__image1 {
+        background: url('../../assets/img/min_port4.JPG') center/cover;
+       
+       
+        display: block;
+       
+        @include medium{
+            background: url('../../assets/img/port4.JPG') center/cover;
+        }
+    
+    &__image2 {
+        background: url('../../assets/img/min_port_dron2.jpg') center/cover;
+        @include medium{
+            background: url('../../assets/img/port_dron2.jpg') center/cover;
+        }
+       
+        }
+
+       
+    }
+
+    
+}

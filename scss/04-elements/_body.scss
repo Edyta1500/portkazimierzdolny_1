@@ -1,0 +1,7 @@
+@use './../01-settings/' as *;
+
+body {
+    font-family:  'Exo', sans-serif;
+   
+    background-color: $color2;
+}

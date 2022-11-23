@@ -1,0 +1,21 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.site-body {
+    background-color: $color2;
+    
+
+    &__social {
+        position: fixed;
+        left: -135px;
+        bottom: 20%;
+    }
+
+    &__cookies{
+
+        position: fixed;
+        bottom: 0;
+        right: 0;
+
+    }
+}

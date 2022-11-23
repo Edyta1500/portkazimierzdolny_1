@@ -1,0 +1,56 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+// wg BEM to blok
+.site-header {
+
+    height: 100vh;
+    width: 100vw;
+    background: url('../../assets/img/min_port_kazimierz_dolny101.JPG') center/cover fixed;
+    display: flex;
+    font-family: 'Square Peg', cursive;
+    @include medium{
+        background: url('../../assets/img/port_kazimierz_dolny101.JPG') center/cover fixed;
+
+    }
+   
+    &__blackout {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        margin-top: 3 * $grid-base;
+
+    }
+
+    &__h1 {
+        position: absolute;
+        bottom: 20%;
+        width: 100%;
+        text-align: center;
+        &--gradient{
+            background:rgba(0, 0, 0, 0.222);
+            border-radius: 2rem;
+        }
+        
+    }
+
+    &__button {
+       position: absolute;
+       bottom: 15%;
+       margin: 0 auto;
+       left: 0;
+       right: 0; 
+
+       @include medium{
+        bottom: 15%;
+       }
+    }
+
+}

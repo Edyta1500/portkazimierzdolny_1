@@ -1,0 +1,40 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+
+.table {
+
+  font-size: 0.68rem;
+  width:90%;
+  overflow-x: scroll;
+  background-color: $color2;
+
+
+  @include x-small {
+    width: 100%;
+    font-size: 0.78rem;
+  }
+
+  @include small {
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  @include medium {
+    width: 90%;
+    font-size: 2rem;
+    
+  }
+
+  
+  &--txt-center {
+    text-align: center;
+    vertical-align: center;
+
+    }
+
+    
+
+
+
+}
