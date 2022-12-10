@@ -247,7 +247,7 @@ tbody tr:nth-last-of-type(even) {
   top: 0rem;
   font-size: 2rem;
   cursor: pointer;
-  color: #5E4C2C;
+  color: #9598D5;
   margin: 2rem;
   z-index: 2;
 }
@@ -426,11 +426,12 @@ nav a {
   }
 }
 .image-box__image1__image2 {
-  background: url("../../assets/img/min_port_dron2.jpg") center/cover;
+  background: url("../../assets/img/min_port_dron1.jpg") center/cover;
+  display: block;
 }
 @media screen and (min-width: 992px) {
   .image-box__image1__image2 {
-    background: url("../../assets/img/port_dron2.jpg") center/cover;
+    background: url("../../assets/img/port_dron1.jpg") center/cover;
   }
 }
 
@@ -680,7 +681,7 @@ nav a {
   background-color: #CFCEC5;
 }
 .site-section__offer {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 @media screen and (min-width: 992px) {
   .site-section__offer {
@@ -701,6 +702,10 @@ nav a {
   overflow: hidden;
 }
 
+.site-footer {
+  background-color: #848C9C;
+}
+
 .text-color-white {
   color: #fefefe;
 }
@@ -711,6 +716,47 @@ nav a {
 
 .text-align-justify {
   text-align: justify;
+}
+
+.text-sm {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5 15px;
+}
+@media screen and (min-width: 576px) {
+  .text-sm {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .text-sm {
+    font-size: 1.68rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-sm {
+    text-align: left;
+    font-size: 2.6rem;
+    line-height: 30px;
+  }
+}
+
+.text-md {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 30px;
+}
+@media screen and (min-width: 576px) {
+  .text-md {
+    font-size: 2.68rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text-md {
+    text-align: left;
+    font-size: 3.6rem;
+    line-height: 45px;
+  }
 }
 
 .display-none {

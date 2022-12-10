@@ -25,9 +25,10 @@
         }
     
     &__image2 {
-        background: url('../../assets/img/min_port_dron2.jpg') center/cover;
+        background: url('../../assets/img/min_port_dron1.jpg') center/cover;
+        display: block;
         @include medium{
-            background: url('../../assets/img/port_dron2.jpg') center/cover;
+            background: url('../../assets/img/port_dron1.jpg') center/cover;
         }
        
         }

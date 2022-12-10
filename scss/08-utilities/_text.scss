@@ -1,4 +1,5 @@
 @use '../01-settings/' as *;
+@use '../02-tools/'as *;
 
 .text-color-white {
     color: $color-white;
@@ -12,3 +13,42 @@
     text-align: justify;
 }
 
+.text-sm{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5$gutter;
+    @include x-small {
+       
+        font-size: 1rem;
+      }
+    
+      @include small {
+       
+        font-size: 1.68rem;
+      }
+      
+      @include medium {
+       text-align: left;
+        font-size: 2.6rem;
+        line-height: 2*$gutter;
+      }
+    
+    
+}
+.text-md{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2*$gutter;
+   
+    
+      @include small {
+       
+        font-size: 2.68rem;
+      }
+      
+      @include medium {
+       text-align: left;
+        font-size: 3.6rem;
+        line-height: 3*$gutter;
+      }
+}
