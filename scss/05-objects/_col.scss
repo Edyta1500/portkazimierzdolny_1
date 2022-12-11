@@ -6,26 +6,59 @@
     width: 100%;
     padding: 0 $gutter $gutter $gutter;
 
+    &--xs33{
+        @include x-small{
+            flex: 0 0 33%;
+            max-width: 33.33333%;
+        }
+    }
+
+    &--xs50{
+        @include x-small{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
    
-   
+    &--sm33{
+    @include small{
+        flex: 0 0 33%;
+        max-width: 33.33333%;
+        }
+    }
+
+    &--sm50{
+    @include small{
+        flex: 0 0 50%;
+        max-width: 50%;
+        }
+    }
+
+   &--md33 {
+    @include medium {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        }
+    }
+
     &--md50 {
         @include medium {
             flex: 0 0 50%;
             max-width: 50%;
         }
     }
-    
-    &--md33 {
-        @include medium {
-            flex: 0 0 33.333333%;
-            max-width: 33.333333%;
-        }
-    }
-    
+        
     &--md25 {
         @include medium {
             flex: 0 0 25%;
             max-width: 25%;
+        } 
+    }
+
+    &--md20 {
+        @include medium{
+        flex: 0 0 20%;
+        max-width: 20%;
         }
     }
     
@@ -50,4 +83,12 @@
         }
     }
 
+    &--lg20{
+        @include large{
+            flex: 0 0 20%;
+            max-width: 20;
+        }
+    }
 }
+
+

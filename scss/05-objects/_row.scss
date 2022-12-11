@@ -9,7 +9,7 @@
     margin: 0 auto;
     padding: 1.5 * $grid-base;
 
-    @include medium {
+    @include x-small {
         flex-direction: row;
     }
    

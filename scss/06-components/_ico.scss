@@ -2,10 +2,13 @@
 @use '../02-tools/' as *;
 
 
-.ico--img {
-    background: url('../assets/img/no-pets.png') center/cover;
-    justify-content: flex-start;
+.ico--img1 {
+    
+    width:100px;
+    height: 100px;
 }
+
+
 .ico--material-icon{
     font-size: 5rem;
 
@@ -21,6 +24,12 @@
 
    &__designation{
         font-size: 2rem;
+
+    &--img1{
+        background: url('../../assets/img/ico_no_dog.png') center/cover;
+    justify-content: flex-start;
+
+    }
         
         
         

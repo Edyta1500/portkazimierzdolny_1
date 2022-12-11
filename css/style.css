@@ -138,7 +138,7 @@ tbody tr:nth-last-of-type(even) {
   margin: 0 auto;
   padding: 15px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
   .row {
     flex-direction: row;
   }
@@ -148,8 +148,26 @@ tbody tr:nth-last-of-type(even) {
   width: 100%;
   padding: 0 15px 15px 15px;
 }
-@media screen and (min-width: 992px) {
-  .col--md50 {
+@media screen and (min-width: 576px) {
+  .col--xs33 {
+    flex: 0 0 33%;
+    max-width: 33.33333%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .col--xs50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col--sm33 {
+    flex: 0 0 33%;
+    max-width: 33.33333%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col--sm50 {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -161,9 +179,21 @@ tbody tr:nth-last-of-type(even) {
   }
 }
 @media screen and (min-width: 992px) {
+  .col--md50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
   .col--md25 {
     flex: 0 0 25%;
     max-width: 25%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .col--md20 {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -182,6 +212,12 @@ tbody tr:nth-last-of-type(even) {
   .col--lg25 {
     flex: 0 0 25%;
     max-width: 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col--lg20 {
+    flex: 0 0 20%;
+    max-width: 20;
   }
 }
 
@@ -331,7 +367,7 @@ nav a {
     font-size: 6rem;
   }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .heading--h1 {
     font-size: 8rem;
   }
@@ -356,7 +392,7 @@ nav a {
   line-height: 3.5rem;
   text-align: center;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .heading--h2 {
     font-size: 3rem;
     line-height: 4.5rem;
@@ -373,7 +409,7 @@ nav a {
   font-size: 2rem;
   text-align: center;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .heading--h3 {
     font-size: 3rem;
   }
@@ -484,7 +520,7 @@ nav a {
     font-size: 0.78rem;
   }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .table {
     width: 100%;
     font-size: 1rem;
@@ -551,9 +587,9 @@ nav a {
   animation-delay: 40s;
 }
 
-.ico--img {
-  background: url("../assets/img/no-pets.png") center/cover;
-  justify-content: flex-start;
+.ico--img1 {
+  width: 100px;
+  height: 100px;
 }
 
 .ico--material-icon {
@@ -567,6 +603,10 @@ nav a {
 }
 .ico__designation {
   font-size: 2rem;
+}
+.ico__designation--img1 {
+  background: url("../../assets/img/ico_no_dog.png") center/cover;
+  justify-content: flex-start;
 }
 
 .cookies {
@@ -680,6 +720,11 @@ nav a {
   padding-bottom: 3rem;
   background-color: #CFCEC5;
 }
+@media screen and (min-width: 768px) {
+  .site-section {
+    padding-top: 6rem;
+  }
+}
 .site-section__offer {
   font-size: 1.8rem;
 }
@@ -693,6 +738,36 @@ nav a {
   .site-section__offer {
     font-size: 4rem;
     line-height: 6rem;
+  }
+}
+
+.site-intersection {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+}
+.site-intersection--offer {
+  background: url("../../assets/img/min_port2.JPG") center/cover fixed;
+}
+@media screen and (min-width: 992px) {
+  .site-intersection--offer {
+    background: url("../../assets/img/port2.JPG") center/cover fixed;
+  }
+}
+.site-intersection--localization {
+  background: url("../../assets/img/p.png") center/cover fixed;
+}
+@media screen and (min-width: 992px) {
+  .site-intersection--localization {
+    background: url("../../assets/img/p.png") center/cover fixed;
+  }
+}
+.site-intersection--contact {
+  background: url("../../assets/img/min_bosmanat.JPG") center/cover fixed;
+}
+@media screen and (min-width: 992px) {
+  .site-intersection--contact {
+    background: url("../../assets/img/bosmanat.JPG") center/cover fixed;
   }
 }
 
@@ -728,7 +803,7 @@ nav a {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .text-sm {
     font-size: 1.68rem;
   }
@@ -746,7 +821,7 @@ nav a {
   font-size: 2rem;
   line-height: 30px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .text-md {
     font-size: 2.68rem;
   }
@@ -765,6 +840,10 @@ nav a {
 
 .display-block {
   display: block;
+}
+
+.center {
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

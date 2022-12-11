@@ -1,0 +1,33 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.site-intersection {
+
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+   
+    &--offer{
+        background: url('../../assets/img/min_port2.JPG') center/cover fixed;
+        @include medium{
+        background: url('../../assets/img/port2.JPG') center/cover fixed;
+        }
+    }
+
+    &--localization{
+        background: url('../../assets/img/p.png') center/cover fixed;
+        @include medium{
+            background: url('../../assets/img/p.png') center/cover fixed;
+    
+        }
+    }
+    &--contact{
+        background: url('../../assets/img/min_bosmanat.JPG') center/cover fixed;
+        @include medium{
+            background: url('../../assets/img/bosmanat.JPG') center/cover fixed;
+    
+        }
+    }
+    
+}  
+    

@@ -7,6 +7,10 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: $color2;
+    @include small{
+        padding-top: 6rem;
+       
+    }
 
     &__offer{
         font-size: 1.8rem;
@@ -14,10 +18,11 @@
         @include medium{
             font-size: 3.5rem;
             line-height: 5.5rem;
+           
         }
         @include large{
             font-size: 4.0rem;
             line-height: 6rem;
-        }
+        }  
     }
 }
