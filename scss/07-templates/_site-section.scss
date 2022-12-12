@@ -4,11 +4,12 @@
 .site-section {
 
     min-height: 80vh;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
+   
+   
     background-color: $color2;
     @include small{
-        padding-top: 6rem;
+       
        
     }
 

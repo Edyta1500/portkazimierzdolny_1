@@ -8,11 +8,16 @@
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 1.5 * $grid-base;
-
-    @include x-small {
+    
+    
+   &--center{
+    align-items: center;
+   }
+   &--md50{
+    @include medium{
         flex-direction: row;
     }
-   
+   }
         
 }
 

@@ -2,10 +2,29 @@
 @use '../02-tools/' as *;
 
 .col {
-
+    display: flex;
+    position:relative;
     width: 100%;
     padding: 0 $gutter $gutter $gutter;
+    
+    &--spacevenly{
+        justify-content: space-evenly;
+    }
+    &--left{
+        justify-content: left;
+        padding: 1rem;
+    }
+    &--center{
+        justify-content: center;
+        
+    }
 
+    &--xs20{
+        @include x-small{
+            flex: 0 0 20%;
+            max-width: 33.33333%;
+        }
+    }
     &--xs33{
         @include x-small{
             flex: 0 0 33%;
@@ -45,6 +64,7 @@
         @include medium {
             flex: 0 0 50%;
             max-width: 50%;
+            
         }
     }
         

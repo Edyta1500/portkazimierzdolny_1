@@ -4,20 +4,21 @@
 
 #menu{
   position: fixed;
-  right: 0rem;
-  top: 0rem;
-  font-size: 2rem;
+  right: 2rem;
+  top: 2rem;
+  font-size: 4rem;
   cursor: pointer;
-  color: $color-gradient3;
+  color: $color-gradient1;
   margin: 2rem;
   z-index: 2;
 
   @include medium{
-    font-size: 3rem;
+    font-size: 3.5rem;
     
   }
   @include large{
-    font-size: 4.5rem;
+    font-size: 6.5rem;
+    right: 5rem;;
   }
 }
 
@@ -32,7 +33,7 @@ nav {
   right: 0;
   width: 50%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,6 +58,7 @@ nav {
   &:nth-of-type(1) {
     border-top: 1px solid rgba(255, 255, 255, 0.451);
   }
+
 }
 
 .nav__link {
@@ -66,13 +68,14 @@ nav {
   align-items: center;
   justify-content: center;
   &:hover {
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.451);
-    color: $color-gradient13;
+    transform: scale(0.9);
+    color: $color-gradient1;
   }
-  font-size: 4rem;
-  @include medium{
-    font-size: 8rem;
+  font-size: 3rem;
+  @include small{
+    font-size: 4rem;
   }
+  
 }
 
 nav a {

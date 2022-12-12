@@ -38,17 +38,21 @@
 
     &--h2 {
 
-        font-size: 2rem;
+        font-size: 4rem;
         width: 100%;
-        line-height: 3.5rem;
+        line-height: 6rem;
         text-align: center;
+        padding: 4rem 0rem;
+        
         @include small{
-            font-size: 3rem;
-            line-height: 4.5rem;
+            font-size: 6rem;
+           
         }
         @include medium{
-            font-size: 5rem;
-            line-height: 6.5rem;
+            font-size: 7rem;
+            line-height: 8.9rem;
+           
+          
         }
         
     }

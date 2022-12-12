@@ -138,15 +138,36 @@ tbody tr:nth-last-of-type(even) {
   margin: 0 auto;
   padding: 15px;
 }
-@media screen and (min-width: 576px) {
-  .row {
+.row--center {
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .row--md50 {
     flex-direction: row;
   }
 }
 
 .col {
+  display: flex;
+  position: relative;
   width: 100%;
   padding: 0 15px 15px 15px;
+}
+.col--spacevenly {
+  justify-content: space-evenly;
+}
+.col--left {
+  justify-content: left;
+  padding: 1rem;
+}
+.col--center {
+  justify-content: center;
+}
+@media screen and (min-width: 576px) {
+  .col--xs20 {
+    flex: 0 0 20%;
+    max-width: 33.33333%;
+  }
 }
 @media screen and (min-width: 576px) {
   .col--xs33 {
@@ -279,22 +300,23 @@ tbody tr:nth-last-of-type(even) {
 
 #menu {
   position: fixed;
-  right: 0rem;
-  top: 0rem;
-  font-size: 2rem;
+  right: 2rem;
+  top: 2rem;
+  font-size: 4rem;
   cursor: pointer;
-  color: #9598D5;
+  color: #58693A;
   margin: 2rem;
   z-index: 2;
 }
 @media screen and (min-width: 992px) {
   #menu {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
   #menu {
-    font-size: 4.5rem;
+    font-size: 6.5rem;
+    right: 5rem;
   }
 }
 
@@ -308,7 +330,7 @@ nav {
   right: 0;
   width: 50%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -341,15 +363,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .nav__link:hover {
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.451);
-  color: #4C8622;
+  transform: scale(0.9);
+  color: #58693A;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .nav__link {
-    font-size: 8rem;
+    font-size: 4rem;
   }
 }
 
@@ -387,21 +409,21 @@ nav a {
   scale: 0.5;
 }
 .heading--h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   width: 100%;
-  line-height: 3.5rem;
+  line-height: 6rem;
   text-align: center;
+  padding: 4rem 0rem;
 }
 @media screen and (min-width: 768px) {
   .heading--h2 {
-    font-size: 3rem;
-    line-height: 4.5rem;
+    font-size: 6rem;
   }
 }
 @media screen and (min-width: 992px) {
   .heading--h2 {
-    font-size: 5rem;
-    line-height: 6.5rem;
+    font-size: 7rem;
+    line-height: 8.9rem;
   }
 }
 .heading--h3 {
@@ -587,26 +609,9 @@ nav a {
   animation-delay: 40s;
 }
 
-.ico--img1 {
-  width: 100px;
-  height: 100px;
-}
-
-.ico--material-icon {
-  font-size: 5rem;
-}
-
-.ico {
-  width: 6rem;
-  height: 6rem;
-  margin: 0 auto;
-}
-.ico__designation {
-  font-size: 2rem;
-}
-.ico__designation--img1 {
-  background: url("../../assets/img/ico_no_dog.png") center/cover;
-  justify-content: flex-start;
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-size: 6rem;
 }
 
 .cookies {
@@ -716,14 +721,8 @@ nav a {
 
 .site-section {
   min-height: 80vh;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
   background-color: #CFCEC5;
-}
-@media screen and (min-width: 768px) {
-  .site-section {
-    padding-top: 6rem;
-  }
 }
 .site-section__offer {
   font-size: 1.8rem;
@@ -742,7 +741,7 @@ nav a {
 }
 
 .site-intersection {
-  height: 60vh;
+  height: 68vh;
   width: 100vw;
   display: flex;
 }
@@ -795,42 +794,39 @@ nav a {
 
 .text-sm {
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.5 15px;
-}
-@media screen and (min-width: 576px) {
-  .text-sm {
-    font-size: 1rem;
-  }
+  font-size: 2rem;
+  line-height: 30px;
 }
 @media screen and (min-width: 768px) {
   .text-sm {
-    font-size: 1.68rem;
+    font-size: 2rem;
+    line-height: 40.2px;
   }
 }
 @media screen and (min-width: 992px) {
   .text-sm {
     text-align: left;
     font-size: 2.6rem;
-    line-height: 30px;
+    line-height: 54px;
   }
 }
 
-.text-md {
+.text__md {
   text-align: center;
   font-size: 2rem;
   line-height: 30px;
 }
 @media screen and (min-width: 768px) {
-  .text-md {
+  .text__md {
     font-size: 2.68rem;
+    line-height: 52.5px;
   }
 }
 @media screen and (min-width: 992px) {
-  .text-md {
+  .text__md {
     text-align: left;
     font-size: 3.6rem;
-    line-height: 45px;
+    line-height: 60px;
   }
 }
 

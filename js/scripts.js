@@ -15,15 +15,15 @@ const body = document.querySelector('body');
 
 
 function closeAll(){
-    console.log('klik na body');
+    
     
     nav.classList.remove('display-block');
+  
     nav.classList.add('display-none');
     
     hamburger.classList.remove('display-none');
     
    
-
 }
 
 hamburger.addEventListener('click', (e)=>{
