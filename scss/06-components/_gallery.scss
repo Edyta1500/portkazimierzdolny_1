@@ -2,57 +2,8 @@
 @use '../02-tools/' as *;
 
 .gallery{
-    
-    &__box{
-        width: 120px;
-        position: absolute;
-        bottom: 20px;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        display: flex;
-    }
-
-    &__point{
-        width: 10px;
-        height: 10px;
-        background-color: $color2;
-        margin: 10px;
-    }
-    &__active{
-        background-color: $color1;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
 }
-.site-gallery > div {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    background: url('../../assets/img/min_bosmanat1.jpg')center/cover;
-    animation: slider 21s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
-    
-} 
-.site-gallery > div:nth-of-type(2) {
-    background-image: url('../../assets/img/min_bosmanat.JPG');
-    animation-delay: 5s;
-}
- 
-.site-gallery > div:nth-of-type(3) {
-    background-image: url('../../assets/img/min_pole_namiotowe1.JPG');
-    animation-delay: 6s;
-}
-
-.site-gallery > div:nth-of-type(4) {
-    background-image: url('../../assets/img/min_port15.JPG');
-    animation-delay: 10s;
-}
-.site-gallery > div:nth-of-type(5) {
-    background-image: url('../../assets/img/min_port5.JPG');
-    animation-delay: 14s; 
-}
-.site-gallery > div:nth-of-type(6) {
-    background-image: url('../../assets/img/min_port6.JPG');
-    animation-delay: 18s; 
-} 

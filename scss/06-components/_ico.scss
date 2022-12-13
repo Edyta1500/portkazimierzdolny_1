@@ -12,5 +12,38 @@
   font-size: 6rem;
 }
 
+.material-icons{
+  color: rgba(255, 255, 255, 0.572);
+  cursor: pointer;
+  font-size: 3rem;
+  &__popup{
+    position:fixed;
+    @include medium{
+      font-size: 4rem;
+    }
+    
+    &:hover{
+      transform: scale(1.3) ;
+         
+    }
+    
+
+    &--close{
+      top:6rem;
+      margin:0 auto;
+    }
+
+    &--back{
+      top:50%;
+      left:10%;
+    }
+    &--forward{
+      top:50%;
+      right:10%;
+    }
+  }
+}
+
+
        
       

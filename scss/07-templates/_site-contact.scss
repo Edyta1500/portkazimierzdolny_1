@@ -2,5 +2,7 @@
 @use '../02-tools/' as * ;
 
 .site-contact{
-   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
