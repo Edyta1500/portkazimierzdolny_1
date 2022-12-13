@@ -3,28 +3,28 @@
 
 .site-intersection {
 
-    height: 68vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
    
     &--offer{
-        background: url('../../assets/img/min_port2.JPG') center/cover fixed;
+        background: url('../../assets/img/pr1_min.JPG') center/cover fixed;
         @include medium{
-        background: url('../../assets/img/port2.JPG') center/cover fixed;
+        background: url('../../assets/img/port11.JPG') center/cover fixed;
         }
     }
 
     &--localization{
-        background: url('../../assets/img/p.png') center/cover fixed;
+        background: url('../../assets/img/min_dron5.jpg') center/cover fixed;
         @include medium{
-            background: url('../../assets/img/p.png') center/cover fixed;
+            background: url('../../assets/img/dron5.jpeg') center/cover fixed;
     
         }
     }
     &--contact{
-        background: url('../../assets/img/min_bosmanat.JPG') center/cover fixed;
+        background: url('../../assets/img/port5a_min.jpg') center/cover fixed;
         @include medium{
-            background: url('../../assets/img/bosmanat.JPG') center/cover fixed;
+            background: url('../../assets/img/port5b.jpg') center/cover fixed;
     
         }
     }

@@ -10,22 +10,17 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-
+    padding: 6rem;
 
     &__photo--min {
         max-width: 20rem;
         max-height: 30rem;
+        
         margin: 2rem;
         transition: transform 0.3s;
         cursor: pointer;
         overflow: hidden;
        
-        
-        
-       
-        box-shadow: 0 0 48px 2px rgba($color: #000000, $alpha: 0.3);
-
         &:hover {
             transform: scale(1.2);
         }
@@ -34,7 +29,6 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
-           
 
         }
     }
@@ -53,7 +47,6 @@
         justify-content: center;
         backdrop-filter: blur(8px);
         z-index: 2;
-        
     
         & img {
             

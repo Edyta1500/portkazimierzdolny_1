@@ -4,20 +4,17 @@
 
 .table {
 
-  font-size: 0.68rem;
+  font-size: 1rem;
   width:90%;
   overflow-x: scroll;
   background-color: $color2;
 
 
-  @include x-small {
-    width: 100%;
-    font-size: 0.78rem;
-  }
+  
 
   @include small {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   
   @include medium {
