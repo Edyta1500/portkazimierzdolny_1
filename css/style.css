@@ -604,7 +604,7 @@ nav a {
 }
 
 .no-dogs {
-  background: url("../../assets/img/no-pets.png") center/cover;
+  background: url("../assets/img/no-pets.png") center/cover;
   width: 5rem;
   height: 5rem;
   margin: 0 3rem 0 2rem;
