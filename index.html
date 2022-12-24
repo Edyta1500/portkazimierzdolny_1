@@ -45,7 +45,7 @@
                 <li class="nav__item"><a class="nav__link" href="#location">Lokalizacja</a></li>
                 <li class="nav__item"><a class="nav__link" href="#contact">Kontakt</a></li>
                 <li class="nav__item"><a class="nav__link" href="#price-list">Cennik</a></li>
-
+                <li class="nav__item"><a class="nav__link" href="#hydrologia">Dane hydrologiczne</a></li>
                 <li class="nav__item"><a class="nav__link" href="#gallery">Galeria</a></li>
             </ul>
         </nav>
@@ -129,21 +129,21 @@
                     <div class="text__md col--center">Nie gościmy piesków</div>
                 </div>
 
-                <span class="heading--h2">Czynne</span>
+                <span class="heading--h3 mt">Czynne</span>
 
                 <div class="col col--center ">
 
                     <div class="text__md col--center ">kwiecień - październik</div>
 
                 </div>
-                <span class="heading--h2">Sezon</span>
+                <span class="heading--h3">Sezon</span>
 
                 <div class="col col--center ">
 
                     <div class="text__md col--center ">maj - wrzesień</div>
 
                 </div>
-                <span class="heading--h2">Regulamin</span>
+                <span class="heading--h3">Regulamin</span>
 
                 <div class="col col--center ">
 
@@ -153,8 +153,8 @@
                                         notification_important
                                     </span>
                                 </span></div>
-                        </a></div>
-                    <div class="text__md col--center ">Regulamin dostępny w formie pdf</div>
+                        </a>
+                    <div class="text__md col--center ">Regulamin dostępny w formie pdf</div></div>
 
                 </div>
 
@@ -759,6 +759,69 @@
    
             </div>
         </section>
+        <section class="site-section" id="hydrologia">
+            <h2 class="heading--h2">Dane hygrologiczne</h2>
+            <h4 class="heading--h4">Źródło: IMGW</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col col--md25">
+                <button class="buttonChooseStacja btn">Puławy</button>
+                <button class="buttonChooseStacja btn">Zawichost</button>
+                <button class="buttonChooseStacja btn" >Annopol</button>
+                </div>
+            </div>
+                <table class="table table__hydro ">
+
+                    <thead class="table table__hydro">
+                        <tr>
+                            
+                            <th scope="col">Stacja</th>
+                            <th scope="col">Rzeka</th>
+                            <th scope="col">Województwo</th>
+                            <th scope="col">Stan wody</th>
+                            <th scope="col">Data i godzina pomiaru</th>
+
+                        </tr>
+                        
+                    </thead>
+    
+                    <tbody id="table__hydro--wisla">
+                     
+                    </tbody>
+    
+
+                </table>
+            </div>
+            
+            <div class="container">
+                <div class="head">
+                    <select name="stacja" id="stacja">
+                        <option value="wybierz stację" class="option__default">Wybierz miejsowość</option>
+                    </select>
+                    <div class="clear">Clear</div>
+                </div>
+                <div class="main">
+                    <table class="table table__hydro">
+                        <thead class="table table__hydro">
+                            <tr>
+                                
+                                <th scope="col">Stacja</th>
+                                <th scope="col">Rzeka</th>
+                                <th scope="col">Województwo</th>
+                                <th scope="col">Stan wody</th>
+                                <th scope="col">Data i godzina pomiaru</th>
+  
+                            </tr>
+                            
+                        </thead>
+        
+                        <tbody id="table__hydro--data">
+                         
+                        </tbody>
+        
+                    </table>
+                </div>
+        </section>
     </main>
     <footer class="site-footer">
         <div class="container">
@@ -796,6 +859,7 @@
     </div>
     </div>
     <script src="js/scripts.js"></script>
+    <script src="js/hydrology.js"></script>
 </body>
 
 </html>

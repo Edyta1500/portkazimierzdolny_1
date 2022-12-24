@@ -29,18 +29,3 @@
         @content;
     }
 }
-
-@mixin color-gradient1{
-    
-    background-image: linear-gradient($color-gradient1 20%, $color-gradient2 60%, $color-gradient3 100%);
-} 
-
-@mixin color-gradient11{
-    
-    background-image: linear-gradient($color-gradient11 20%, $color-gradient12 80%, $color-gradient13 100%);
-} 
-
-@mixin color-gradient21{
-    
-    background-image: linear-gradient($color-gradient13 20%, $color-gradient12 80%, $color-gradient11 100%);
-} 

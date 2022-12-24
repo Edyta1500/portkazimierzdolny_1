@@ -31,7 +31,13 @@
     }
 
     
+    &__hydro{
+      background-color: $color-accent2;
 
+      &--wisla{
+        background-color: $color6;
+      }
+    }
 
 
 }
