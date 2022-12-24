@@ -768,11 +768,14 @@
                 <button class="buttonChooseStacja btn">Puławy</button>
                 <button class="buttonChooseStacja btn">Zawichost</button>
                 <button class="buttonChooseStacja btn" >Annopol</button>
+                <button class="buttonChooseStacja btn" >Dęblin</button>
+                
+
                 </div>
             </div>
                 <table class="table table__hydro ">
 
-                    <thead class="table table__hydro">
+                    <thead class="table table__hydro--head">
                         <tr>
                             
                             <th scope="col">Stacja</th>
@@ -794,15 +797,16 @@
             </div>
             
             <div class="container">
-                <div class="head">
+               <div class="row row--md50"></div>
+                <div class="head col">
                     <select name="stacja" id="stacja">
                         <option value="wybierz stację" class="option__default">Wybierz miejsowość</option>
                     </select>
-                    <div class="clear">Clear</div>
+                    <div class="clear btn">Clear</div>
                 </div>
                 <div class="main">
                     <table class="table table__hydro">
-                        <thead class="table table__hydro">
+                        <thead class="table table__hydro--head">
                             <tr>
                                 
                                 <th scope="col">Stacja</th>
@@ -815,7 +819,7 @@
                             
                         </thead>
         
-                        <tbody id="table__hydro--data">
+                        <tbody class="table__hydro--body" id="table__hydro--data">
                          
                         </tbody>
         

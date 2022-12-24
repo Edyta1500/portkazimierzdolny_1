@@ -473,7 +473,12 @@ nav a {
 .btn:hover {
   background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
   background-color: #dfdfdf;
-  transform: scale(0.9);
+  transform: scale(0.9) .btn:hover --clear;
+  transform-font-size: 1.5rem;
+  transform-font-weight: bold;
+  transform-padding: 6px 24px;
+  transform-text-decoration: none;
+  transform-text-shadow: 0px 1px 0px #ffffff;
 }
 @media screen and (min-width: 992px) {
   .btn {
@@ -573,7 +578,10 @@ nav a {
   vertical-align: center;
 }
 .table__hydro {
-  background-color: #C1C406;
+  width: 100%;
+}
+.table__hydro--head {
+  background-color: #76780A;
 }
 .table__hydro--wisla {
   background-color: #FFF065;

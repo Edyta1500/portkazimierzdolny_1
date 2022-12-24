@@ -32,7 +32,10 @@
 
     
     &__hydro{
-      background-color: $color-accent2;
+      width: 100%;
+      &--head{
+      background-color: $color-accent3;
+      }
 
       &--wisla{
         background-color: $color6;
