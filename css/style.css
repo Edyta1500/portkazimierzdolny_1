@@ -749,17 +749,17 @@ nav a {
   padding-bottom: 6rem;
   background-color: #CFCEC5;
 }
-.site-section__offer, .site-section__hydrology {
+.site-section__offer {
   font-size: 1.8rem;
 }
 @media screen and (min-width: 992px) {
-  .site-section__offer, .site-section__hydrology {
+  .site-section__offer {
     font-size: 2.5rem;
     line-height: 3.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .site-section__offer, .site-section__hydrology {
+  .site-section__offer {
     font-size: 3.5rem;
     line-height: 4.5rem;
   }

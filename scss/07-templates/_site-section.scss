@@ -7,7 +7,7 @@
     padding-bottom: 6rem; 
     background-color: $color2;
    
-    &__offer, &__hydrology{
+    &__offer{
         font-size: 1.8rem;
 
         @include medium{
