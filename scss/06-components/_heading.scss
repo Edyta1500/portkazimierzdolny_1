@@ -9,19 +9,19 @@
        
         
         @include x-small{
-            font-size: 6rem;
+            font-size: 5rem;
         }
         
         @include small{
-            font-size: 8rem;
+            font-size: 6rem;
         }
         
         @include medium {
-            font-size: 14rem;
+            font-size: 10rem;
         }
 
         @include large{
-            font-size: 16rem;
+            font-size: 14rem;
            
         }
         
@@ -45,13 +45,13 @@
         padding: 3rem 0rem;
         
         @include small{
-            font-size: 5rem;
+            font-size: 4.5rem;
             line-height: 7rem;
            
         }
         @include medium{
-            font-size: 6.5rem;
-            line-height: 8.9rem;
+            font-size: 5.5rem;
+            line-height: 8rem;
            
           
         }
@@ -61,6 +61,7 @@
         font-weight: bold;
         font-size: 2rem;
         text-align: center;
+        margin-top: 5rem;
     
        @include small{
         font-size: 3rem;
@@ -72,6 +73,7 @@
   
     &--h4{
         font-size: 1rem;
+       text-align: center;
         
     }
 }

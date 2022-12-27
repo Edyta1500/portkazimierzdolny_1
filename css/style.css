@@ -164,6 +164,7 @@ tbody tr:nth-last-of-type(even) {
 }
 .col--spacevenly {
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .col--left {
   justify-content: left;
@@ -171,6 +172,8 @@ tbody tr:nth-last-of-type(even) {
 }
 .col--center {
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 576px) {
   .col--xs20 {
@@ -395,22 +398,22 @@ nav a {
 }
 @media screen and (min-width: 576px) {
   .heading--h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 768px) {
   .heading--h1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
 @media screen and (min-width: 992px) {
   .heading--h1 {
-    font-size: 14rem;
+    font-size: 10rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .heading--h1 {
-    font-size: 16rem;
+    font-size: 14rem;
   }
 }
 .heading--hide {
@@ -426,20 +429,21 @@ nav a {
 }
 @media screen and (min-width: 768px) {
   .heading--h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 7rem;
   }
 }
 @media screen and (min-width: 992px) {
   .heading--h2 {
-    font-size: 6.5rem;
-    line-height: 8.9rem;
+    font-size: 5.5rem;
+    line-height: 8rem;
   }
 }
 .heading--h3 {
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
+  margin-top: 5rem;
 }
 @media screen and (min-width: 768px) {
   .heading--h3 {
@@ -453,6 +457,7 @@ nav a {
 }
 .heading--h4 {
   font-size: 1rem;
+  text-align: center;
 }
 
 .btn {
@@ -482,7 +487,7 @@ nav a {
 }
 @media screen and (min-width: 992px) {
   .btn {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -640,7 +645,7 @@ nav a {
   width: 100%;
   line-height: 1rem;
   padding: 2rem;
-  background-color: #CFCEC5;
+  background-color: #C1C406;
   z-index: 3;
 }
 .cookies__text {
@@ -744,19 +749,19 @@ nav a {
   padding-bottom: 6rem;
   background-color: #CFCEC5;
 }
-.site-section__offer {
+.site-section__offer, .site-section__hydrology {
   font-size: 1.8rem;
 }
 @media screen and (min-width: 992px) {
-  .site-section__offer {
-    font-size: 3.5rem;
-    line-height: 5.5rem;
+  .site-section__offer, .site-section__hydrology {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .site-section__offer {
-    font-size: 4rem;
-    line-height: 6rem;
+  .site-section__offer, .site-section__hydrology {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
   }
 }
 
@@ -901,8 +906,8 @@ nav a {
   }
 }
 
-.mt50 {
-  margin-top: 5rem;
+.mt70 {
+  margin-top: 7rem;
 }
 
 .display-none {

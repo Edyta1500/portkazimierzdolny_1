@@ -125,11 +125,11 @@
                 </div>
                 <div class="col col--left">
                     <div class="material-icons no-dogs col--left">
-                        </div>
+                    </div>
                     <div class="text__md col--center">Nie gościmy piesków</div>
                 </div>
 
-                <span class="heading--h3 mt">Czynne</span>
+                <span class="heading--h3 mt70">Czynne</span>
 
                 <div class="col col--center ">
 
@@ -147,14 +147,16 @@
 
                 <div class="col col--center ">
 
-                    <div class="text__md col--center "><a href="regulamin_portu.pdf" target="_blank">
-                            <div class="material-icons col--center"><span class="material-symbols-outlined">
+                    <div class="text__md row">
+                        <a class="col col--center" href="regulamin_portu.pdf" target="_blank">
+                            <div class="material-icons"><span class="material-symbols-outlined">
                                     <span class="material-symbols-outlined">
                                         notification_important
                                     </span>
                                 </span></div>
                         </a>
-                    <div class="text__md col--center ">Regulamin dostępny w formie pdf</div></div>
+                        <div class="text__md col--center ">Regulamin dostępny w formie pdf</div>
+                    </div>
 
                 </div>
 
@@ -191,20 +193,20 @@
 
         <div class="site-intersection site-intersection--contact"></div>
 
-        <section class="site-contact container " id="contact">
+        <section class=" site-section site-contact container " id="contact">
 
             <div class="row">
                 <h2 class="heading--h2">Kontakt</h2>
                 <span class="material-icons text-md col col--center">phone</span>
                 <div class="col">
-                    <p class="text-sm "><a href="tel:+48781088668">Bosman Portu tel. 781 088 668</a><br>
+                    <p class="text-md "><a href="tel:+48781088668">Bosman Portu tel. 781 088 668</a><br>
                         <a href="tel:+48881341012">Bosmanat Portu tel. 881 341 012</a>
                     </p>
                 </div>
             </div>
             <div class="row ">
                 <span class="material-icons text-md col col--center">email</span>
-                <p class="col col--mg50 text-sm">Port Jachtowy w Kazimierzu Dolnym<br> ul.Senatorska <br> 24-120
+                <p class="col col--mg50 text-md">Port Jachtowy w Kazimierzu Dolnym<br> ul.Senatorska <br> 24-120
                     Kazimierz Dolny</p>
             </div>
         </section>
@@ -745,62 +747,71 @@
                 <div class="site-gallery__photo--min "><img src="assets/img/min_dron1.jpg"></div>
                 <div class="site-gallery__photo--min "><img src="assets/img/min_dron5.jpg"></div>
                 <div class="site-gallery__photo--min "><img src="assets/img/min_port_kazimierz_dolny101.JPG"></div>
-                
-                
+
+
                 <div class="site-gallery__photo--popup display-none"><img src="" alt="" class="popup__img">
-                   
+
                     <span class="material-icons material-icons__popup material-icons__popup--close">close</span>
-                    
+
                     <span class="material-icons material-icons__popup material-icons__popup--back">arrow_back_ios</span>
-                   
-                    <span class="material-icons material-icons__popup material-icons__popup--forward">arrow_forward_ios</span>
+
+                    <span
+                        class="material-icons material-icons__popup material-icons__popup--forward">arrow_forward_ios</span>
 
                 </div>
-   
+
             </div>
+
         </section>
-        <section class="site-section" id="hydrologia">
-            <h2 class="heading--h2">Dane hygrologiczne</h2>
-            <h4 class="heading--h4">Źródło: IMGW</h4>
-            <div class="container">
-                <div class="row">
-                    <div class="col col--md25">
-                <button class="buttonChooseStacja btn">Puławy</button>
-                <button class="buttonChooseStacja btn">Zawichost</button>
-                <button class="buttonChooseStacja btn" >Annopol</button>
-                <button class="buttonChooseStacja btn" >Dęblin</button>
-                
 
+        <!--HYDROLOGIA  -->
+
+        <section class="site-section site-section__hydrology" id="hydrologia">
+
+            <h2 class="heading--h2">Dane hygrologiczne</h2>
+
+            <h4 class="heading--h4">Źródło: IMGW</h4>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col  col--space-evenly">
+                        <div class="buttonChooseStacja btn">Koło</div>
+                        <div class="buttonChooseStacja btn">Sandomierz</div>
+                        <div class="buttonChooseStacja btn">Zawichost</div>
+                        <div class="buttonChooseStacja btn">Annopol</div>
+                        <div class="buttonChooseStacja btn">Radomysl</div>
+               </div>
                 </div>
-            </div>
                 <table class="table table__hydro ">
 
                     <thead class="table table__hydro--head">
                         <tr>
-                            
+
                             <th scope="col">Stacja</th>
                             <th scope="col">Rzeka</th>
                             <th scope="col">Województwo</th>
                             <th scope="col">Stan wody</th>
                             <th scope="col">Data i godzina pomiaru</th>
+                            <th scope="col">Poziom</th>
 
                         </tr>
-                        
+
                     </thead>
-    
+
                     <tbody id="table__hydro--wisla">
-                     
+
                     </tbody>
-    
+
 
                 </table>
             </div>
-            
+
             <div class="container">
-               <div class="row row--md50"></div>
+                <div class="row row--md50"></div>
                 <div class="head col">
-                    <select name="stacja" id="stacja">
-                        <option value="wybierz stację" class="option__default">Wybierz miejsowość</option>
+                    <select name="stacja" id="stacja" class="btn">
+                        <option value="wybierz stację" class="option__default btn">Wybierz miejsowość</option>
                     </select>
                     <div class="clear btn">Clear</div>
                 </div>
@@ -808,21 +819,22 @@
                     <table class="table table__hydro">
                         <thead class="table table__hydro--head">
                             <tr>
-                                
+
                                 <th scope="col">Stacja</th>
                                 <th scope="col">Rzeka</th>
                                 <th scope="col">Województwo</th>
                                 <th scope="col">Stan wody</th>
                                 <th scope="col">Data i godzina pomiaru</th>
-  
+
+
                             </tr>
-                            
+
                         </thead>
-        
+
                         <tbody class="table__hydro--body" id="table__hydro--data">
-                         
+
                         </tbody>
-        
+
                     </table>
                 </div>
         </section>
@@ -853,8 +865,10 @@
             </div>
         </div>
         </div>
-        <a href="https://pl.freepik.com/darmowe-zdjecie/tekstura-z-lekkiego-materialu_1037307.htm">background - obraz autorstwa kues1 na Freepik</a> 
-        <a href="https://www.flaticon.com/free-icons/no-pets" title="no pets icons">No pets icons created by Darius Dan - Flaticon</a>
+        <a href="https://pl.freepik.com/darmowe-zdjecie/tekstura-z-lekkiego-materialu_1037307.htm">background - obraz
+            autorstwa kues1 na Freepik</a>
+        <a href="https://www.flaticon.com/free-icons/no-pets" title="no pets icons">No pets icons created by Darius Dan
+            - Flaticon</a>
     </footer>
 
     <div class="site-body__cookies cookies">
@@ -862,7 +876,7 @@
         <div class="cookies__close"></div>
     </div>
     </div>
-    <script src="js/scripts.js"></script>
+    <script type="module" src="js/scripts.js"></script>
     <script src="js/hydrology.js"></script>
 </body>
 

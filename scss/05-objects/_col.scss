@@ -9,6 +9,7 @@
     
     &--spacevenly{
         justify-content: space-evenly;
+        flex-wrap: wrap;
     }
     &--left{
         justify-content: left;
@@ -16,6 +17,8 @@
     }
     &--center{
         justify-content: center;
+       display: flex;
+       flex-wrap: wrap;
         
     }
 
