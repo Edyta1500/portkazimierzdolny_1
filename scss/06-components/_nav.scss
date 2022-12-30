@@ -8,7 +8,7 @@
   top: 2rem;
   font-size: 4rem;
   cursor: pointer;
-  color: $color-gradient1;
+  color: $color6;
   margin: 2rem;
   z-index: 2;
 
@@ -69,7 +69,7 @@ nav {
   justify-content: center;
   &:hover {
     transform: scale(0.9);
-    color: $color-gradient1;
+    color: $color6;
   }
   font-size: 3rem;
   @include small{

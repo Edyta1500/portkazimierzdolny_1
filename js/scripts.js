@@ -1,5 +1,7 @@
 'use strict';
 
+// PANEL COOKIE
+
 import  {InfoCookies} from "./modules/InfoCookies.js";
 
 const infCookie = new InfoCookies;
@@ -13,15 +15,6 @@ closeLink.addEventListener('click', (e) => {
     infCookie.setCookie();
 });
 
-
-
-const hamburger = document.querySelector('#menu');
-
-const nav = document.querySelector('nav');
-
-const link = document.querySelectorAll('.nav__item');
-
-const body = document.querySelector('body');
 
 const img = document.querySelectorAll('.site-gallery__photo--min img');
 
@@ -74,6 +67,44 @@ function closeImg(){
     }, 300);
 }
 
+
+
+close.addEventListener('click', closeImg);
+
+forward.addEventListener('click', nextImg);
+
+back.addEventListener('click',previousImg);
+
+document.addEventListener('keydown',(e)=> {
+   if(!popup.classList.contains('display-none')){
+    if(e.key === 'ArrowRight'){
+
+            nextImg();
+
+    }else if(e.key ==='ArrowLeft'){
+        
+        previousImg();
+
+    }else if(e.key === 'Escape'){
+       
+        closeImg();
+    }
+}
+
+});
+
+
+//MENU NAVIGATION
+
+
+const hamburger = document.querySelector('#menu');
+
+const nav = document.querySelector('nav');
+
+const link = document.querySelectorAll('.nav__item');
+
+const body = document.querySelector('body');
+
 function closeAll(){
     
     
@@ -111,32 +142,6 @@ img.forEach((elem, index)=>{
       
     })
 });
-
-close.addEventListener('click', closeImg);
-
-forward.addEventListener('click', nextImg);
-
-back.addEventListener('click',previousImg);
-
-document.addEventListener('keydown',(e)=> {
-   if(!popup.classList.contains('display-none')){
-    if(e.key === 'ArrowRight'){
-
-            nextImg();
-
-    }else if(e.key ==='ArrowLeft'){
-        
-        previousImg();
-
-    }else if(e.key === 'Escape'){
-       
-        closeImg();
-    }
-}
-
-});
-
-
 
 
 

@@ -316,7 +316,7 @@ tbody tr:nth-last-of-type(even) {
   top: 2rem;
   font-size: 4rem;
   cursor: pointer;
-  color: #58693A;
+  color: #7D6F82;
   margin: 2rem;
   z-index: 2;
 }
@@ -379,7 +379,7 @@ nav {
 }
 .nav__link:hover {
   transform: scale(0.9);
-  color: #58693A;
+  color: #7D6F82;
 }
 @media screen and (min-width: 768px) {
   .nav__link {
@@ -586,10 +586,10 @@ nav a {
   width: 100%;
 }
 .table__hydro--head {
-  background-color: #76780A;
+  background-color: #CFCFCF;
 }
 .table__hydro--wisla {
-  background-color: #FFF065;
+  background-color: #7D6F82;
 }
 
 .gallery {
@@ -700,7 +700,7 @@ nav a {
 .site-header {
   height: 100vh;
   width: 100vw;
-  background: url("../assets/img/min_port_kazimierz_dolny101.JPG") center/cover fixed;
+  background: url("../assets/img/tn_port_kazimierz_dolny101.JPG") center/cover fixed;
   display: flex;
   font-family: "Square Peg", cursive;
 }
@@ -771,23 +771,23 @@ nav a {
   display: flex;
 }
 .site-intersection--offer {
-  background: url("../assets/img/pr1_min.JPG") center/cover fixed;
+  background: url("../assets/img/port33.JPG") center/cover fixed;
 }
 @media screen and (min-width: 992px) {
   .site-intersection--offer {
-    background: url("../assets/img/port11.JPG") center/cover fixed;
+    background: url("../assets/img/tn_port33.JPG") center/cover fixed;
   }
 }
 .site-intersection--localization {
-  background: url("../assets/img/min_dron5.jpg") center/cover fixed;
+  background: url("../assets/img/tn_dron1.jpeg") center/cover fixed;
 }
 @media screen and (min-width: 992px) {
   .site-intersection--localization {
-    background: url("../assets/img/dron5.jpeg") center/cover fixed;
+    background: url("../assets/img/dron1.jpeg") center/cover fixed;
   }
 }
 .site-intersection--contact {
-  background: url("../assets/img/port5a_min.jpg") center/cover fixed;
+  background: url("../assets/img/tn_port5b.jpg") center/cover fixed;
 }
 @media screen and (min-width: 992px) {
   .site-intersection--contact {
@@ -845,8 +845,8 @@ nav a {
   z-index: 2;
 }
 .site-gallery__photo--popup img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .popup-disappear {
@@ -854,7 +854,7 @@ nav a {
 }
 
 .site-footer {
-  background-color: #848C9C;
+  background-color: #CABACF;
 }
 
 .text-color-white {
